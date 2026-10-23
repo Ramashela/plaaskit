@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plaaskit"
+version = "0.1.0"
+description = "Traceability, SMS weather/pest alerts and water management for South African smallholder farmers"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+plaas = "plaaskit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["plaaskit*"]
